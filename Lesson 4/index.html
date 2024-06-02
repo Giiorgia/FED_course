@@ -4,47 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <style>
-        .name{
-            display: flex;
-            align-items: center;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 5px;
-            background-color:darkgreen;
-        }
-        .contact{
-            display:flex;
-            align-items:center;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 5px;
-        }
-    </style>
 </head>
 <body>
+    <style>
+        .details{
+            background-color:darkolivegreen;
+            float:left;
+            height: 900px;
+            width: 400px;
+            outline: black thick ;
+        }
+        img{
+            display:block;
+            margin-right:50%;
+        }
+        .main{
+            margin-left: 1%;
+            float:inline-start;
+            width: fit-content;
+        }
+    </style>
     <div class="page_wrapper">
-        <header class="my_header">
-            <div class="name">
+            <div class="details">
                 <a href="#">
                     <img src="./img/Joey.jpg" alt="Joey" title="Joey"
-                         width="150"
-                         height="200">
+                         width="200"
+                         height="250"
+                        >
                 </a>
-                <h1>Joey Tribianni</h1>
-            </div>
-            <div class="contact">
-                <ul>
-                    <li>
+                <u>
+                    <h2>Contact</h2>
+                </u>
+                <p>
                         Phone: 
                      <a href="Tel: 999-786-456">999-786-456</a>
-                    </li>
-                     <li>
+                </p>
+                <p>
                         Email: 
                         <a href="Email: tribianni.joey@hotmail.com">tribianni.joey@hotmail.com</a>
-                    </li>
-                </ul>
-            </div>
+                    </p>
+                <u>
+                    <h2>Education</h2>
+                </u>
+                <p>Highschool</p>
+                <p>Phoebe's French Class</p>
+                <u>
+                <h2>Expertise</h2>
+                </u>
+                <p>
+                    Acting
+                    <br>
+                    Sales
+                    <br>
+                    Able to drink an entire gallon of milk in 10 seconds
+                </p>
+                <u>
+                    <h2>Language</h2>
+                </u>
+                <p>English</p>
+                <p>French</p>
         </div>
+        <div class="main">
             <main>
+                <h1>Joey Tribianni</h1>
+                    <h2>How you doin`?</h2>
                 <section>
                     <u>
                         <h2>
@@ -54,44 +77,42 @@
                     
                     <ul> 
                         <li> 
-                            SE 1 EP 6 - Al Pacino`s butt 
+                            SE 3 EP 7 - Drama teacher
                         </li>
+                        <p>
+                            Joey becomes a learning extension teacher in soap acting. <br>
+                            He gives his students very unconventional acting advice.<br>
+                             When Joey hears one of his students is also auditioning for the same role he wants,<br>
+                             he tries to sabotage him by giving him bad advice about how to play the character as a gay man.<br>
+                             This backfires on Joey, as the other actor is appreciated for <br> his gay acting and selected for the part along with a two-year TV contract.
+                        </p>
                         <li> 
                             SE 2 EP 2 - Perfume seller 
                         </li>
-                        <li> 
-                            SE 3 EP 7 - Drama teacher
+                        <p>
+                            Joey is having trouble with a new guy at work who dresses like a cowboy and who intrudes Joey's section.<br>
+                            Joey dresses up as a cowboy to be the best at work again.<br>
+                            Joey and the cowboy have their showdown and Joey wins because the 
+                            cowboy sprays perfume <br> into a customer's eyes.
+                        </p>
+                        <li>
+                            SE 2 - Dr. Drake Ramoray
                         </li>
-                    </ul> 
-                </section>
-                <section>
-                    <u>
-                        <h2>
-                            Studies:
-                        </h2>
-                    </u>
-                    <ul> 
+                        <p>
+                            Drake Ramoray first appears in Friends season two episode "The One With The Lesbian Wedding," <br>
+                            where he explains to the sister of a patient that he's treating her for a subcranial hematoma.<br>
+                            He then asks the sister out for coffee.
+                        </p>
                         <li> 
-                            SE 10 EP 13: French lesson with Phoebe
+                            SE 1 EP 6 - Al Pacino`s butt 
                         </li>
-                    </ul> 
-                </section>
-                <section>
-                    <u>
-                        <h2>
-                            Hard skills:
-                        </h2>
-                    </u>
-                    <ul> 
-                        <li> 
-                            Acting
-                        </li>
-                        <li> 
-                            Sales
-                        </li>
-                        <li> 
-                            Able to drink an entire gallon of milk in 10 seconds
-                        </li>
+                        <p>
+                            Joey's new agent manages to obtain him a role in the new Al Pacino movie.<br>
+                            However, the role is Pacino's butt double in a shower scene.<br>
+                            Despite this, Joey manages to ruin it by overacting his role, which later gets him fired.<br>
+                            The friends console him and reassure him that his big break is coming.
+                        </p>
+                       
                     </ul> 
                 </section>
                 <section>
@@ -116,6 +137,7 @@
                     </ul>
                 </section>
             </main>
-                
+        </div>
+             
 </body>
 </html>
