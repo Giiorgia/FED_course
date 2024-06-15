@@ -1,0 +1,233 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family:'Poppins', Helvetica, sans-serif;
+    color: #544837;
+}
+
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.header_content{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+}
+
+.main_nav a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.logo{
+    width: 186px;
+}
+
+.main_nav{
+    width: 350px;
+    align-items: right;
+    padding: 5px 0;
+}
+
+.button{
+    text-transform: capitalize;
+    padding: 11px 25px;
+    color: #173A56;
+    border: 1px solid #BCD0E5;
+    font-weight: 600;
+    border-color: #000000;
+}
+
+.button.accent{
+    background-color: #FF9900;
+    border-radius: 4px;
+    color:white;
+    border-color: transparent;
+}
+
+.header_actions .button:first-child{
+    margin-right: 14px;
+}
+
+.site_title{
+    font-weight: 700;
+    color:#2F281E;
+    line-height: 54px;
+    margin-bottom: 30px;
+    font-size: 44px;
+}
+
+.site_description{
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.hero_button{
+    width: 175px;
+    border-radius: 4px;
+    background-color: #FF9900;
+    color: white;
+    border-color: transparent;
+    padding: 15px 41px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.video_button{
+    border:none;
+    background-color: white;
+    color:#FF9900;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.box{
+    margin-right: 2px;
+    display: inline-block;
+    border-bottom: 12px solid transparent;
+    border-right: 2px solid transparent;
+    border-left: 25px solid #FF9900;
+    border-top: 12px solid transparent;
+    margin-bottom: -5px;
+    border-radius: 2px;
+}
+
+.hero_content{
+    display:flex;
+    align-items:center;
+    justify-content: center;  
+    flex-wrap: wrap;
+}
+
+.text_col{
+    width: 100%;
+    max-width: 500px;
+}
+
+.image{
+    width: 100%;
+    max-width: 644px;
+}
+
+.powers{
+    margin: 0 auto;
+    padding: 0 0;
+    width: 100px;
+    height: 100px;
+}
+
+.tests, .surveys, .preference, .second{
+    width: 240px;
+}
+
+.super_title{
+    color:#2F281E;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    width: 539px;
+    margin-left: 400px;
+    margin-bottom: 54px;
+}
+
+.elements{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 34px;
+
+}
+
+.box_arrow{
+    width: 51px;
+    height: 50px;
+    background-color: #7752BE ;
+    display: inline-block;
+    border-radius: 19px;
+    background-image: url(../assets/img/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+}
+
+.power_title{
+    font-weight: 600;
+    font-size: 22px;
+    color: #2F281E;
+}
+
+.box_surveys{
+    width: 51px;
+    height: 50px;
+    background-color: #FAB005;
+    display: inline-block;
+    border-radius: 19px;
+    background-image: url(../assets/img/icons/survey.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+}
+
+.box_preference{
+    width: 51px;
+    height: 50px;
+    background-color: #F03E3D;
+    display: inline-block;
+    border-radius: 19px;
+    background-image: url(../assets/img/icons/heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+}
+
+.box_second{
+    width: 51px;
+    height: 50px;
+    background-color: #4DADF7;
+    display: inline-block;
+    border-radius: 19px;
+    background-image: url(../assets/img/icons/sandclock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+}
+
+.elements :not(:last-child){
+    margin-right: 45px
+}
+
+.bottom_button{
+    width: 175px;
+    background-color: #FF9900;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 32px;
+    border-radius: 4px;
+    margin-left: 550px;
+    text-align: center;
+}
