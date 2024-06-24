@@ -302,14 +302,15 @@ a{
     max-width: 520px;
 }
 
-.design_professionals{
+
+/*.design_professionals{
     display: flex;
     width: 1110px;
     align-items:center;
     justify-content: center;  
     flex-wrap: wrap;
     margin: 0 auto; 
-}
+}*/
 
 .managers_container{
     width: 100%;
