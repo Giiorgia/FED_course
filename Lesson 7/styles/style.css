@@ -139,16 +139,28 @@ a {
     margin-bottom: -5px;
     border-radius: 2px;
 }*/
-.video_button:before {
-  content: "";
+/*.video_button:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    background-image: url(../assets/img/icons/triangle.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: -3px;
+    margin-right: 9px;
+}*/
+/*.video_button:before{
+    content: '<i class="fa-solid fa-play"></i>';
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    margin-bottom: -3px;
+    margin-right: 9px;
+}*/
+.play_icon {
   display: inline-block;
-  width: 20px;
-  height: 17px;
-  background-image: url(../assets/img/icons/triangle.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin-bottom: -3px;
-  margin-right: 9px;
+  background-color: #FF9900;
 }
 
 .image {
