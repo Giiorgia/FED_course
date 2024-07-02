@@ -118,6 +118,12 @@ a {
   cursor: pointer;
 }
 
+.hero_button_actions {
+  width: 100%;
+  max-width: 161px;
+  display: inline-block;
+}
+
 .video_button {
   border: none;
   background-color: white;
@@ -126,6 +132,10 @@ a {
   font-size: 16px;
   text-decoration: underline;
   cursor: pointer;
+  width: 100%;
+  max-width: 135px;
+  margin: 0;
+  padding: 0;
 }
 
 /*.video_button:before{
@@ -158,9 +168,29 @@ a {
     margin-bottom: -3px;
     margin-right: 9px;
 }*/
-.play_icon {
-  display: inline-block;
-  background-color: #FF9900;
+/*.fa-play{
+    display: inline-block;
+    color: #FF9900;
+    width: 20px;
+    height: 17px;
+    margin-right: 8.5px;
+}
+
+.fa-play::before{
+    display: inline-block;
+    color: #FF9900;
+    width: 20px;
+    height: 17px;
+    margin-right: 8.5px;
+    margin-bottom: -100px;
+}*/
+.play_button {
+  display: inline;
+  color: #FF9900;
+  width: 20px;
+  height: 17px;
+  margin-right: 9px;
+  margin-bottom: -15px;
 }
 
 .image {
