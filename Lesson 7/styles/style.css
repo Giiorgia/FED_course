@@ -437,6 +437,7 @@ a {
 .managers_title {
   font-size: 36px;
   max-width: 342px;
+  margin-bottom: 22px;
 }
 
 .list {
