@@ -1,0 +1,182 @@
+.page_wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.envelope {
+  position: relative;
+  margin: 0 auto;
+}
+
+.received {
+  display: block;
+  position: absolute;
+  transform: translate(-200%, 50%);
+  animation-name: cardanimation;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  transition: all 1s ease;
+}
+
+/*.received{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}*/
+.open_envelope {
+  position: relative;
+}
+
+.open {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100%;
+  max-width: 450px;
+  animation-name: openenvelope;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  /*transition: opacity 1000ms ease-in-out;*/
+  opacity: 1;
+  animation-direction: reverse;
+  animation-delay: none;
+}
+
+.birthday_name {
+  position: relative;
+  margin: 0 auto;
+}
+
+.name {
+  position: absolute;
+  left: 60%;
+  top: 335px;
+  font-size: 50px;
+  background-color: red;
+  font-weight: bold;
+  animation-name: name;
+  opacity: 1;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  opacity: 1;
+  animation-direction: reverse;
+  animation-delay: none;
+}
+
+.birthday_card {
+  background-color: red;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 20%;
+  font-size: 40px;
+  height: 100%;
+  margin: 0 auto;
+  animation-name: card;
+  opacity: 1;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  opacity: 1;
+  animation-direction: reverse;
+  animation-delay: none;
+  transform: translateY(500%);
+  transition: all 1s ease;
+}
+
+.wish {
+  text-align: center;
+}
+
+@keyframes cardanimation {
+  0% {
+    transform: translate(-200%, 50%);
+  }
+  25% {
+    transform: translate(130%, 50%);
+  }
+}
+@keyframes openenvelope {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes name {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes card {
+  0% {
+    opacity: 1;
+    transform: translateY(-250%);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(-200%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-150%);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(50%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(300%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(500%);
+  }
+}
