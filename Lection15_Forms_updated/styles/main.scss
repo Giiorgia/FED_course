@@ -1,0 +1,294 @@
+.page_wrapper{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #13253A;
+    font-weight: 400;
+}
+
+.my_header, .kpi{
+    background-color: #F4F6F7;
+}
+
+.header_container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.header_bar{
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+    //align-content: center;
+    //margin-left: 135px; //- why if I apply this, it s not fitting?
+    //margin-right: 135px;
+    width: 100%;
+    max-width: 1440px;
+    //flex-wrap: wrap;
+}
+
+.header_logo{
+    width: 130px;
+    margin-top: 40px;
+    margin-right: 794px; //- why if I use 794px I cannot fit all heading bar?;
+    //margin-left: 135px;
+    margin-bottom: 228px;
+}
+
+.header_actions a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.header_actions{
+    line-height: 12px;
+    margin-top: 53px;
+    margin-bottom: 155px;
+    //align-self: center;
+}
+
+.services_header:hover{
+    text-decoration: underline;
+}
+
+.about:hover{
+    text-decoration: underline;
+}
+
+.contact:hover{
+    text-decoration: underline;
+}
+
+.header_actions :not(:last-child){
+    margin-right: 50px;
+}
+
+.business_container{
+    //width: 100%;
+    //max-width: 1440px;
+    //margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1440px; //if I use this centering, my margin-right from business_advice doesnt work
+}
+
+.business_advice{
+    width: 100%;
+    max-width: 470px;
+    margin-bottom: 245px;
+    margin-right: 131px;
+    display: inline-block;
+}
+
+.agency{
+    color: #2557AB;
+    margin-bottom: 5px;
+    margin-top: 0; //why if I don t put this property it s not aligned and has a default margin?
+}
+
+.grow{
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    margin-top: 0; //why if I don t put this property it s not aligned and has a default margin?
+}
+
+.business_description{
+    line-height: 27px;
+    margin-bottom: 20px; //- why not working?
+    margin-top: 0;
+}
+
+.business_button{
+    background-color: #FF7F57;
+    color: white;
+    width: 336px;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 19px 42px 18px ;
+    display:inline-block;
+    text-align: center;
+}
+
+.business_image{
+    display: inline-block;
+    width: 569px;
+    height: 419px;
+    margin-bottom: 179px;
+    //margin-right: 137px;
+}
+
+.services_container{
+    width: 100%;
+    max-width: 1170px ;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.services{
+    //display: block;
+    //margin: 0 auto;
+    text-align: center;
+    color: #2557AB;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.theme{
+    text-align: center;
+    font-size: 38px;
+    letter-spacing: -0.5px;
+    margin-bottom: 30px;
+    margin-top: 0; //why do I have to set it? 
+}
+
+.company_services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company_services h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.responsive{
+    width: 100%;
+    max-width: 370px;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.fa-computer{
+    color: #FF7F57;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.award{
+    width: 100%;
+    max-width: 370px;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.fa-award{
+    color: #FF7F57;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.support{
+    width: 100%;
+    max-width: 370px;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.fa-headset{
+    color: #FF7F57;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.kpi_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    height: 205px;
+}
+
+.websites{
+    margin-right: 125px;
+    width: 230px;
+    //margin-bottom: 60px;
+}
+
+.title_kpi{
+    font-size: 46px;
+    margin:0;
+}
+
+.description_kpi{
+    font-size: 16px;
+    color:#2557AB;
+}
+
+.fa-plus::before{
+    color: #FF7F57;
+}
+
+.years{
+    margin-right: 157px;
+    width: 100%;
+    max-width: 160px;
+    //margin-bottom: 60px;
+}
+
+.customer{
+    width: 100%;
+    max-width: 150px;
+    //margin-bottom: 60px;
+}
+
+.about_container{
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.small_title{
+    color: #2557AB;
+    font-weight: 500;
+    text-align: center;
+    //margin: 0 auto;
+    //display: block;
+}
+
+.about_title{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.about_description{
+    width: 100%;
+    max-width: 370px;
+    display: inline-block;
+}
+
+.first_description{
+   font-style: italic;
+   font-size: 20px;
+   line-height: 30px;
+   width: 400px; // why does it work when the parent is 370px?
+   margin-bottom: 20px;
+   margin-right: 30px;
+}
+
+.second_description{
+    line-height: 27px;
+    margin-bottom: 115px;
+    margin-right: 30px;
+}
+
+//.complete_description{
+   // display: inline-block;
+   // width: 100%;
+   // max-width: 570px
+}//
