@@ -25,17 +25,22 @@
     //align-content: center;
     //margin-left: 135px; //- why if I apply this, it s not fitting?
     //margin-right: 135px;
-    width: 100%;
-    max-width: 1440px;
+    //width: 100%;
+    //max-width: 1440px;
     //flex-wrap: wrap;
+    align-items: center;
+    //margin-top: 40px;
+    padding: 40px 0 //- WHY DON T WE USE MARGIN? ADN WHY IT DIFFERS IN DESIGN FROM LOGO TO NAV ACTIONS?
 }
 
-.header_logo{
+.logo{
     width: 130px;
-    margin-top: 40px;
-    margin-right: 794px; //- why if I use 794px I cannot fit all heading bar?;
+    //margin-top: 40px;
+    //margin-right: 794px; //- why if I use 794px I cannot fit all heading bar?;
     //margin-left: 135px;
-    margin-bottom: 228px;
+    margin-bottom: 155px; //why on the desing there are different mb for header nav and logo? 
+    display: flex;
+    column-gap: 794px;
 }
 
 .header_actions a{
@@ -46,13 +51,16 @@
 
 .header_actions{
     line-height: 12px;
-    margin-top: 53px;
+    //margin-top: 53px;
     margin-bottom: 155px;
     //align-self: center;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
 }
 
-.services_header:hover{
-    text-decoration: underline;
+.services_header:hover{ //- HOW DO I PUT COLORED HOVERING UNDERLINE?
+    text-decoration: underline
 }
 
 .about:hover{
@@ -63,9 +71,9 @@
     text-decoration: underline;
 }
 
-.header_actions :not(:last-child){
-    margin-right: 50px;
-}
+//.header_actions :not(:last-child){
+    //margin-right: 50px;
+//}
 
 .business_container{
     //width: 100%;
@@ -73,16 +81,19 @@
     //margin: 0 auto;
     display: flex;
     justify-content: space-between; 
-    width: 100%;
-    max-width: 1440px; //if I use this centering, my margin-right from business_advice doesnt work
+    //width: 100%;
+    //max-width: 1440px; //if I use this centering, my margin-right from business_advice doesnt work
+    column-gap: 131px; //WHY THE GAP IS BIGGER?
+    padding-bottom: 178px; 
+    margin-bottom: 120px;
 }
 
 .business_advice{
     width: 100%;
     max-width: 470px;
-    margin-bottom: 245px;
-    margin-right: 131px;
-    display: inline-block;
+    //margin-bottom: 245px;
+    //margin-right: 131px;
+    //display: inline-block;
 }
 
 .agency{
@@ -117,10 +128,10 @@
 }
 
 .business_image{
-    display: inline-block;
+    //display: inline-block;
     width: 569px;
-    height: 419px;
-    margin-bottom: 179px;
+    height: 419px; //WHY THE HEIGHT IS NOT WORKING? BECAUSE THE CONTAINER HAS A DEFAULT HEIGHT, BUT HOW CAN I CHANGE THAT? 
+    //margin-bottom: 179px;
     //margin-right: 137px;
 }
 
@@ -138,6 +149,7 @@
     color: #2557AB;
     font-weight: 500;
     margin-bottom: 5px;
+    margin-top: 0; // WHY IS SETTED BY DEFAULT? 
 }
 
 .theme{
@@ -152,6 +164,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 30px;
 }
 
 .company_services h3{
@@ -167,7 +180,7 @@
     margin-bottom: 100px;
 }
 
-.fa-computer{
+.fa-computer::before{
     color: #FF7F57;
     width: 64px;
     height: 64px;
@@ -182,7 +195,7 @@
     margin-bottom: 100px;
 }
 
-.fa-award{
+.fa-award::before{
     color: #FF7F57;
     width: 64px;
     height: 64px;
@@ -197,7 +210,7 @@
     margin-bottom: 100px;
 }
 
-.fa-headset{
+.fa-headset::before{
     color: #FF7F57;
     width: 64px;
     height: 64px;
@@ -209,12 +222,20 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    height: 205px;
+    //height:205px
+}
+
+.kpi_items{
+    display: flex;
+    justify-content: space-between ;
+    column-gap: 125px;
+    align-items: center;
+    padding: 60px 0;
 }
 
 .websites{
-    margin-right: 125px;
-    width: 230px;
+    //margin-right: 125px;
+    width: 250px;
     //margin-bottom: 60px;
 }
 
@@ -233,7 +254,7 @@
 }
 
 .years{
-    margin-right: 157px;
+    //margin-right: 157px;
     width: 100%;
     max-width: 160px;
     //margin-bottom: 60px;
@@ -267,28 +288,258 @@
 }
 
 .about_description{
+    //width: 100%;
+    //max-width: 370px;
+    //display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+//.first_description{
+   //font-style: italic;
+   //font-size: 20px;
+   //line-height: 30px;
+   //width: 400px; // why does it work when the parent is 370px?
+   //margin-bottom: 20px;
+   //margin-right: 30px;
+//}
+
+.italic_description{
+    font-style: italic;
     width: 100%;
     max-width: 370px;
-    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    //text-align:inherit;
+    //vertical-align: 
 }
 
-.first_description{
-   font-style: italic;
-   font-size: 20px;
-   line-height: 30px;
-   width: 400px; // why does it work when the parent is 370px?
-   margin-bottom: 20px;
-   margin-right: 30px;
-}
-
-.second_description{
+.development{
+    width: 100%;
+    max-width: 370px;
+    font-size: 16px;
     line-height: 27px;
     margin-bottom: 115px;
-    margin-right: 30px;
+    text-align: justify;
+}
+
+.complete_description{
+    width: 100%;
+    max-width: 570px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+.complete{
+    margin-bottom: 27px;
+}
+
+.complete_description p{
+    line-height: 27px;
 }
 
 //.complete_description{
    // display: inline-block;
    // width: 100%;
    // max-width: 570px
-}//
+//}
+
+.about_logos{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 73px;
+    margin-bottom: 100px;
+}
+
+.relax_container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.relax{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.relax_description h2{
+    width: 100%;
+    max-width: 370px;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.relax_description p{
+    width: 100%;
+    max-width: 470px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+.relax_items{
+    list-style: none;
+    width: 100%;
+    max-width: 470px;
+    text-align: left; //HOW DO I ALIGN THE LIST OT BE AT THE SAME LEVEL AS THE PARAGRAPH FROM ABOVE?
+}
+
+.fa-check::before{
+    color: #FF7F57;
+    width: 16px;
+    height: 16px ;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.relax_image{
+    float: right;
+    width: 100%;
+    max-width: 600px;
+}
+
+.rectangle_image{
+    float: right;
+    clear: both;
+    margin-top: -5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.website_container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top:167px //DID THIS BECAUSE OF THE FLOATING IMAGE FROM ABOVE(COULDNT DOWLOAD IT AS AN ENTIRE IMAGE)
+}
+
+.website{
+    background-color: #FF7F57;
+    min-height: 464px;
+}
+
+.help{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.website_heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;
+    color: white;
+    margin-top: 0;
+    width: 100%;
+    width: 970px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.website_description{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 770px;
+    text-align: center;
+    color: white;
+    line-height: 27px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.website_button{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 336px;
+    padding: 20px 0;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #2557AB;
+    color: white;
+    border-radius: 3px;
+    border-color: transparent;
+    box-shadow: 0px 9px 24px -3px rgba(0,0,0,0.75);
+}
+
+.form_section{
+    background-color: #11364E;
+}
+
+.form{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    margin-top: -35px; //SHOULD I USE THIS?
+}
+
+.form_heading{
+    text-align: center;
+    padding-top: 140px;
+    margin-bottom: 30px;
+    font-size: 38px;
+    color: #FFFFFF;
+    letter-spacing: -0.5px;
+    font-weight: normal;
+}
+
+.my_form{
+    width: 100%;
+    max-width: 371px;
+    margin: 0 auto;
+}
+
+.input_label, .input_field{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.input_label{
+    margin-bottom: 40px;
+}
+
+.label_text{
+    color: white;
+}
+
+.input_field{
+    margin-top: 10px; //WHY CANT I ADD MB TO .LABEL_TEXT INSTEAD MT .INPUT_FIELD?
+}
+
+.form_button{
+    margin: 0 auto;
+    display: block;
+    padding: 19px 100px;
+    color: #FFFFFF;
+    background-color: #FF7F57;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 140px;
+}
+
+.fluffy_copyright{
+    background-color: #13253A;
+}
+
+.copyright{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.input_field .user_message{
+    min-height: 120px;
+}
