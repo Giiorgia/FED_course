@@ -329,15 +329,22 @@
   list-style: none;
   width: 100%;
   max-width: 470px;
-  text-align: left;
+  text-align: justify;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.relax_items li {
+  margin-bottom: 12px;
 }
 
 .fa-check::before {
   color: #FF7F57;
   width: 16px;
   height: 16px;
-  margin-right: 15px;
   display: inline-block;
+  padding-right: 15px;
 }
 
 .relax_image {
@@ -349,7 +356,7 @@
 .rectangle_image {
   float: right;
   clear: both;
-  margin-top: -5px;
+  margin-top: -40px;
   width: 100%;
   max-width: 600px;
 }
@@ -358,7 +365,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  margin-top: 167px;
+  margin-top: 130px;
 }
 
 .website {
