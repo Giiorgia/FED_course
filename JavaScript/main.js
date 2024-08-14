@@ -26,7 +26,12 @@ switch (operator) {
         break;
 }
 
-if(isNaN(num1, num2)){
+if(isNaN(num1)){
     console.log('Invalid input. Please enter numbers only')
 }
 
+if(isNaN(num2)){
+    console.log('Invalid input. Please enter numbers only')
+}
+
+//let nums = num1 || num2;
