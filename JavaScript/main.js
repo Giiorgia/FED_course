@@ -34,4 +34,5 @@ if(isNaN(num2)){
     console.log('Invalid input. Please enter numbers only')
 }
 
+
 //let nums = num1 || num2;
