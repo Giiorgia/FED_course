@@ -33,5 +33,16 @@ var playList = [
     }
     ];
 
-    console.log(playList)
+    console.log(playList);
     
+const open = document.getElementsByClassName('open');
+const modalContainer = document.getElementsByClassName('modalContainer');
+const close = document.getElementsByClassName('close');
+
+open.addEventListener('click' , () => {
+    modalContainer.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+    modalContainer.classList.remove('show');
+});

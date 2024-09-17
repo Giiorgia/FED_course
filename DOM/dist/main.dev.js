@@ -26,3 +26,12 @@ var playList = [{
   song: "ENTER SANDMAN"
 }];
 console.log(playList);
+var open = document.getElementsByClassName('open');
+var modalContainer = document.getElementsByClassName('modalContainer');
+var close = document.getElementsByClassName('close');
+open.addEventListener('click', function () {
+  modalContainer.classList.add('show');
+});
+close.addEventListener('click', function () {
+  modalContainer.classList.remove('show');
+});
