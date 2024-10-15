@@ -5,8 +5,8 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    //dots: true,
-    prevArrow: '<button type="button" class="nav-button slick-prev"></button>',
-    nextArrow: '<button type="button" class="nav-button slick-next"></button>'
+    dots: true,
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>'
   });
 });

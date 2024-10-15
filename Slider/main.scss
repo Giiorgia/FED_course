@@ -13,19 +13,29 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.carousel-item.slick-slide{
-    margin-right: 50px;
-    align-items: center;
-}
+// .carousel-item.slick-slide{
+//     margin-right: 50px;
+//     align-items: center;
+// }
 
-.nav-button{
-    background-color: black;
-    width: 50px;
-    height: 50px;
-    font-size: 32px;
-    color: white;
+// .nav-button{
+//     background-color: black;
+//     width: 50px;
+//     height: 50px;
+//     font-size: 32px;
+//     color: white;
+// }
+
+//.slick-prev{
+    //left: -50px
+//}
+
+.slick-arrow::before{
+    background-color: transparent;
+    color: black;
+    font-size: 30px;
 }
 
 .slick-prev{
-    left: -50px
+    left: -100px;
 }
