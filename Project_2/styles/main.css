@@ -282,7 +282,7 @@ body, .page_wrapper {
   height: 470px;
   background-color: #7E5AFF;
   position: absolute;
-  transform: translate(200%);
+  transform: translate(150%);
 }
 
 .news_section {
