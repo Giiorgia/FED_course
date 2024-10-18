@@ -342,15 +342,18 @@ body, .page_wrapper{
     margin-bottom: 89px;
 }
 
-.news_card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 30px;
-}
+// .news_card{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     column-gap: 30px;
+// }
 
 .unmatched, .advertising, .hypnotize{
     background-color: white;
+    margin-right: 30px;
+    width: 100%;
+    max-width: 370px;
 }
 
 .card_info{
@@ -404,4 +407,25 @@ body, .page_wrapper{
     margin-left: 20px;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.slick-prev::before , .slick-next::before{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 40px;
+    font-family: 'Font Awesome 5 Free';
+    content:"\f104";
+    border-radius: 50%;
+    border: 1 px solid;
+}
+
+.slick-prev{
+   width: 40px;
+   height: 40px;
+   left: -80px;
+}
+
+.slick-next{
+    right: -60px;
 }
