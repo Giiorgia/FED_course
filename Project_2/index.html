@@ -26,6 +26,8 @@
 
     <link type="text/css" rel="stylesheet" href="./styles/lightgallery-bundle.min.css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
     <link rel="stylesheet" href="./styles/main.css">
 
@@ -225,26 +227,87 @@
                 <h1 class="gallery_title">Gallery</h1>
                 <div id="my-gallery">
                     <a href="./assets/building.jpg" data-lg-size="1740-1314" class="grid_item1">
-                        <img alt="building" src="./assets/building small.jpg" class="building"/>
+                        <img alt="building" src="./assets/building small.jpg" class="building" />
                     </a>
                     <a href="./assets/building 2.jpg" data-lg-size="855-642" class="grid_item2">
-                        <img alt="building2" src="./assets/building 2 small.jpg" class="building2"/>
+                        <img alt="building2" src="./assets/building 2 small.jpg" class="building2" />
                     </a>
                     <a href="./assets/building 3.jpg" data-lg-size="855-642" class="grid_item3">
-                        <img alt="building3" src="./assets/building 3 small.jpg" class="building3"/>
+                        <img alt="building3" src="./assets/building 3 small.jpg" class="building3" />
                     </a>
                     <a href="./assets/building 4.jpg" data-lg-size="855-642" class="grid_item4">
-                        <img alt="building4" src="./assets/building 4 small.jpg" class="building4"/>
+                        <img alt="building4" src="./assets/building 4 small.jpg" class="building4" />
                     </a>
                     <a href="./assets/building 5.jpg" data-lg-size="855-642" class="grid_item5">
-                        <img alt="building5" src="./assets/building 5 small.jpg" class="building5"/>
+                        <img alt="building5" src="./assets/building 5 small.jpg" class="building5" />
                     </a>
                 </div>
                 <button class="gallery_button">See more</button>
             </div>
         </div>
     </section>
+    <section class="map_section">
+        <div id="map"></div>
+        <form>
+            <!--<div class="form_container">
+                <div class="form_content">
+                    <span class="form_line"></span>
+                    <h1 class="form_title">Get in touch</h1>
+                    <div class="form_info">
+                        <div class="company_info">
+                            <p class="contacts"><i class="fa-solid fa-location-dot" id="form_location"></i>91 Nolan Extensions Suite
+                                670</p>
+                            <p class="contacts"><i class="fa-solid fa-phone"></i>+001 356-868-2454</p>
+                            <p class="contacts"><i class="fa-solid fa-inbox"></i>montichello@service.com</p>
+                            <p class="contacts"><i class="fa-regular fa-clock"></i>From 07:05AM to 19:30PM</p>
+                        </div>
+                        <div class="form_input">
+                            <input type="text" id="fullname" name="fullname" placeholder="Full Name" class="form_name"><br>
+                            <input type="text" id="mail" name="mail" placeholder="Email" class="form_email"><br>
+                            <input type="submit" class="form_button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>-->
+    </section>
+        <section class="footer_section">
+            <!--<img class="footer_image" alt="footer_image" src="./assets/footerbck.jpg">-->
+            <div class="footer_container">
+                <div class="footer_content">
+                    <a><img class="footer_logo" src="./assets/footer_logo.png"></a>
+                    <div class="social_nav footer_nav">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+            
 
+                </div>
+            </div>
+        </section>
+        <form>
+            <div class="form_container">
+                <div class="form_content">
+                    <span class="form_line"></span>
+                    <h1 class="form_title">Get in touch</h1>
+                    <div class="form_info">
+                        <div class="company_info">
+                            <p class="contacts"><i class="fa-solid fa-location-dot" id="form_location"></i>91 Nolan Extensions Suite
+                                670</p>
+                            <p class="contacts"><i class="fa-solid fa-phone"></i>+001 356-868-2454</p>
+                            <p class="contacts"><i class="fa-solid fa-inbox"></i>montichello@service.com</p>
+                            <p class="contacts"><i class="fa-regular fa-clock"></i>From 07:05AM to 19:30PM</p>
+                        </div>
+                        <div class="form_input">
+                            <input type="text" id="fullname" name="fullname" placeholder="Full Name" class="form_name"><br>
+                            <input type="text" id="mail" name="mail" placeholder="Email" class="form_email"><br>
+                            <input type="submit" class="form_button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -254,6 +317,9 @@
     <script src="./js/lightgallery.min.js"></script>
     <script src="./js/lg-thumbnail.min.js"></script>
     <script src="./js/lg-zoom.min.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script src="./js/main.js"></script>
 

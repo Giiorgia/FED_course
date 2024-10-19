@@ -76,10 +76,11 @@ body, .page_wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     column-gap: 20px;
     width: 100%;
     max-width: 160px;
+    color: white;
 }
 
 .social_nav i{
@@ -509,5 +510,131 @@ body, .page_wrapper{
     color: black;
     padding: 17px 57px;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.map_section{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#map { height: 700px; }
+
+.form_container{
+    width: 100%;
+    max-width: 770px;
+    //background-color: white;
+    margin: 0 auto;
+    //border: 1px solid;
+    // border-color: transparent;
+    // box-sizing: border-box;
+    margin-top: -850px;
+    z-index: 99999;
+    position: relative;
+}
+
+.form_content{
+    padding: 60px 60px;
+    margin: 0 auto;
+    background-image: url(/Project_2/assets/formbck.jpg);
+    //margin-top: -250px;
+    // z-index: 99999;
+    // position: relative;
+}
+
+.form_line{
+    border: 1px solid #2C4058;
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+.form_title{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 44px;
+    color: #2C4058;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.form_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 54px;
+}
+
+#form_location::before, .fa-phone::before, .fa-inbox::before, .fa-clock::before{
+    display: block;
+    width: 5px;
+    height: 5px;
+    font-size: 14px;
+    margin-top: -5px;
+    text-align: left;
+}
+
+#form_location::before, .fa-phone::before, .fa-inbox::before, .fa-clock::before{
+    margin-right: 20px;
+}
+
+.contacts{
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.form_name, .form_email{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #2C4058;
+    margin-bottom: 33px;
+}
+
+.form_button{
+    text-transform: uppercase;
+    padding: 11px 34px;
+    margin-left: 258px;
+}
+
+.footer_section{
+    width: 100%;
+    background-image: url(../assets/footerbck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+// .footer_image{
+//     width: 100%;
+//     //position: relative;
+// }
+
+.footer_container{
+    padding: 230px 0;
+    margin: 0 auto;
+    //text-align: center;
+    width: 100%;
+}
+// .footer_logo{
+//     width: 241px;
+//     height: 112px;
+//     //position: absolute;
+// }
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 369px;
+}
+
+.footer_nav{
+    margin-top: -50px;
+}
+
+.footer_content a{
     cursor: pointer;
 }
