@@ -508,7 +508,7 @@ body, .page_wrapper {
 .form_content {
   padding: 60px 60px;
   margin: 0 auto;
-  background-image: url(/Project_2/assets/formbck.jpg);
+  background-image: url(../assets/formbck.jpg);
 }
 
 .form_line {
