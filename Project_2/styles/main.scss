@@ -526,6 +526,10 @@ body, .page_wrapper{
     max-width: 770px;
     //background-color: white;
     margin: 0 auto;
+    background-image: url(../assets/formbck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
     //border: 1px solid;
     // border-color: transparent;
     // box-sizing: border-box;
@@ -537,9 +541,10 @@ body, .page_wrapper{
 .form_content{
     padding: 60px 60px;
     margin: 0 auto;
-    background-image: url(../assets/formbck.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url(../assets/formbck.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-color: white;
     //margin-top: -250px;
     // z-index: 99999;
     // position: relative;

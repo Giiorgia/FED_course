@@ -500,6 +500,10 @@ body, .page_wrapper {
   width: 100%;
   max-width: 770px;
   margin: 0 auto;
+  background-image: url(../assets/formbck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
   margin-top: -850px;
   z-index: 99999;
   position: relative;
@@ -508,9 +512,6 @@ body, .page_wrapper {
 .form_content {
   padding: 60px 60px;
   margin: 0 auto;
-  background-image: url(../assets/formbck.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .form_line {
