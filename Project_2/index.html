@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montichello</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -15,11 +16,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/fontawesome.css">
     <link rel="stylesheet" href="./styles/brands.css">
     <link rel="stylesheet" href="./styles/solid.css">
+
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link type="text/css" rel="stylesheet" href="./styles/lightgallery-bundle.min.css" />
+
+
     <link rel="stylesheet" href="./styles/main.css">
 
 </head>
@@ -211,13 +218,44 @@
             </div>
     </div>
     </section>
+    <section class="gallery">
+        <div class="gallery_container">
+            <div class="gallery_content">
+                <span class="gallery_line"></span>
+                <h1 class="gallery_title">Gallery</h1>
+                <div id="my-gallery">
+                    <a href="./assets/building.jpg" data-lg-size="1740-1314" class="grid_item1">
+                        <img alt="building" src="./assets/building small.jpg" class="building"/>
+                    </a>
+                    <a href="./assets/building 2.jpg" data-lg-size="855-642" class="grid_item2">
+                        <img alt="building2" src="./assets/building 2 small.jpg" class="building2"/>
+                    </a>
+                    <a href="./assets/building 3.jpg" data-lg-size="855-642" class="grid_item3">
+                        <img alt="building3" src="./assets/building 3 small.jpg" class="building3"/>
+                    </a>
+                    <a href="./assets/building 4.jpg" data-lg-size="855-642" class="grid_item4">
+                        <img alt="building4" src="./assets/building 4 small.jpg" class="building4"/>
+                    </a>
+                    <a href="./assets/building 5.jpg" data-lg-size="855-642" class="grid_item5">
+                        <img alt="building5" src="./assets/building 5 small.jpg" class="building5"/>
+                    </a>
+                </div>
+                <button class="gallery_button">See more</button>
+            </div>
+        </div>
+    </section>
 
     </div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./main.js"></script>
+
+    <script src="./js/lightgallery.min.js"></script>
+    <script src="./js/lg-thumbnail.min.js"></script>
+    <script src="./js/lg-zoom.min.js"></script>
+
+    <script src="./js/main.js"></script>
 
 
 </body>
