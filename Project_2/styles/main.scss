@@ -42,7 +42,7 @@ body,
     background: rgb(126, 90, 255);
     background: linear-gradient(270deg, rgba(126, 90, 255, 1) 30%, rgba(85, 183, 255, 1) 140%);
     opacity: 0.70;
-    // z-index: 1;
+    z-index: 1;
 }
 
 .header_container {
@@ -198,9 +198,9 @@ body,
     // max-height: 800px;
 }
 
-// .heading_bck{
-//     z-index: 1;
-// }
+.heading_bck{
+   position: realtive;
+}
 
 .center_section,
 .commerce_section,
