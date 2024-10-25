@@ -43,7 +43,7 @@ body,
   padding: 53px 0;
   margin: 0 auto;
   position: relative;
-  z-index: 10000;
+  z-index: 2;
 }
 
 .header_nav {
@@ -111,6 +111,15 @@ body,
   justify-content: center;
 }
 
+.header_dots {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-right: 50px;
+  margin-top: 295px;
+}
+
 .header_title {
   margin: 0 auto;
   width: 100%;
@@ -169,7 +178,7 @@ body,
 }
 
 .heading_bck {
-  z-index: 10000000000000;
+  z-index: 1;
 }
 
 .center_section,
