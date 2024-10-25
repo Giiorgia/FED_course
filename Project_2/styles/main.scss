@@ -40,8 +40,9 @@ body,
     top: 0;
     left: 0;
     background: rgb(126, 90, 255);
-    background: linear-gradient(270deg, rgba(126, 90, 255, 1) 0%, rgba(85, 183, 255, 1) 100%);
-    opacity: 0.90;
+    background: linear-gradient(270deg, rgba(126, 90, 255, 1) 30%, rgba(85, 183, 255, 1) 140%);
+    opacity: 0.70;
+    // z-index: 1;
 }
 
 .header_container {
@@ -54,7 +55,7 @@ body,
     padding: 53px 0;
     margin: 0 auto;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header_nav {
@@ -197,9 +198,9 @@ body,
     // max-height: 800px;
 }
 
-.heading_bck{
-    z-index: 1;
-}
+// .heading_bck{
+//     z-index: 1;
+// }
 
 .center_section,
 .commerce_section,
